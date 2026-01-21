@@ -34,14 +34,14 @@
   },
   "jobs": [
     {
-      "job_id": "ci",
-      "job_name": "Run Python Tests",
+      "job_id": "test_job",
+      "job_name": "Run Pytest",
       "runs_on": "ubuntu-latest",
       "steps": [
         {
           "step_name": "Checkout code",
           "action_type": "uses",
-          "action": "actions/checkout@v4"
+          "action": "actions/checkout@v3"
         },
         {
           "step_name": "Set up Python",
